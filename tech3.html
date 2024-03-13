@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boxing and colour gradings</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            
+        }
+        div{
+            display: inline-block;
+          
+            margin: 20px;
+            
+
+        }
+        .child1{
+            border: solid;
+            border-color: blue;
+            background-image: linear-gradient(blue ,purple);
+            border-radius: 5%;
+            padding: 10px;
+            color: beige;
+            filter: drop-shadow(2px 2px 5px purple);
+            margin-left: 40%;
+            
+            
+        }
+        .child2{
+            border: solid;
+            border-color: blue;
+            background-image: linear-gradient(blue ,purple);
+            border-radius: 5%;
+            padding: 10px;
+            color: beige;
+            filter: drop-shadow(2px 2px 5px purple);
+        }
+           .child1:visited{
+            color: aqua;  }
+
+        .child1:hover{
+            color:brown;  }
+            .child1:active{
+            color:rgb(42, 165, 104);  }
+            h2{
+                text-align: center;
+            }
+            section{
+                width: 100vw;
+                height: 100vh;
+              
+                background-image: linear-gradient(
+                    rgba(5, 5, 65, 0.9),
+        
+                    rgb(7, 7, 124, 0.9),
+                    rgb(85, 85, 157, 0.9))
+                ,url(tree-736885_1280.jpg);
+            }
+            h2{
+                color: antiquewhite;
+                font-family: serif;
+            }
+           
+    </style>
+</head>
+
+<body>
+   
+    <section>
+   <h2>This is a CSS website</h2>
+
+    <div class="child1">Register now</div>
+    <div class="child2">Subscribe</div>
+</section>
+</body>
+</html>

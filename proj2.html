@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slideshow</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .container{
+            width: 60%;
+            height: 30rem;
+            border: 2px solid blue;
+            border-radius: 5px;
+            background-image: url(istockphoto-1419410282-1024x1024.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            animation: slideshow 10s linear  infinite ;
+        }
+        @keyframes slideshow{
+            0%{
+                background-image: url(istockphoto-1458215547-1024x1024.jpg);
+            }
+            50%{
+                background-image: url(istockphoto-1462151146-1024x1024.jpg);
+            }
+            100%{
+                background-image: url(tree-736885_1280.jpg);
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container"></div>
+</body>
+</html>
